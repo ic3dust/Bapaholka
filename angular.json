@@ -6,7 +6,7 @@
     "analytics": false
   },
   "newProjectRoot": "projects",
-  "projects": {
+  "projects": { 
     "web": {
       "projectType": "application",
       "schematics": {

@@ -1,0 +1,24 @@
+:root{
+    --primary: #D9D6C7;
+    --secondary: #C3C0B3;
+    --yellow: #fed722;
+    --bone: #fef8db;
+    --orange: #f75700;
+    --cyan: #24e2cb;
+    --black: #191510;
+    --black-cyan: #1B3B35;
+    --darker:#4F4233;
+
+    --font-h: 38px;
+    --normal: 20px;
+    --large: 32px;
+    --small: 16px;
+
+    --base-gap: 12px;
+}
+[theme="dark"]{
+    --primary:var(--darker);
+    --secondary: var(--black);
+    --white:var(--secondary);
+    --whiter:var(--primary);
+}

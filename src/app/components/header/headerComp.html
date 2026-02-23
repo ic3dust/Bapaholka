@@ -1,13 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <mat-toolbar class="app-logo">
-        <img src="imgs/Logo.png">
-    </mat-toolbar>
-</body>
-</html>
+<header class="header">
+    <img src="imgs/Logo.png">
+    <div class="header-links-wrapper">
+        <div class="left-header-links-wrapper">
+            <span class="dropdown element">
+                <span class="material-symbols-outlined">language_chinese_array</span>
+                <span class="langmark">{{currentLang}}</span>
+                    <ul class="dropdown-menu">
+                        <li>Українська</li>
+                        <li>English</li>
+                    </ul>
+            </span>
+            <a routerLink="chats">
+                <span class="material-symbols-outlined">chat_bubble</span>
+                    <span>Chat</span>
+                </a>
+                <a routerLink="profile">
+                    <span class="material-symbols-outlined">account_circle</span> 
+                    <span>Your profile</span>
+                </a>
+                <a routerLink="settings">
+                    <span class="material-symbols-outlined">settings</span> 
+                    <span>Settings</span>
+                </a>
+        </div>
+        <a routerLink="add_to_market" class="btn-primary">Sell items</a>
+    </div>
+</header>

@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" [class.hidden]="isHidden">
     <img src="imgs/Logo.png">
     <div class="header-links-wrapper">
         <div class="left-header-links-wrapper">
@@ -6,23 +6,23 @@
                 <span class="material-symbols-outlined">language_chinese_array</span>
                 <span class="langmark">{{currentLang}}</span>
                     <ul class="dropdown-menu">
-                        <li>Українська</li>
-                        <li>English</li>
+                        <li (click)="setLang('ua')">Українська</li>
+                        <li (click)="setLang('en')">English</li>
                     </ul>
             </span>
             <a routerLink="chats">
                 <span class="material-symbols-outlined">chat_bubble</span>
-                    <span>Chat</span>
+                    <span>{{'CHAT' | translate}}</span>
                 </a>
                 <a routerLink="profile">
                     <span class="material-symbols-outlined">account_circle</span> 
-                    <span>Your profile</span>
+                    <span>{{'PROFILE' | translate}}</span>
                 </a>
                 <a routerLink="settings">
                     <span class="material-symbols-outlined">settings</span> 
-                    <span>Settings</span>
+                    <span>{{'SETTINGS' | translate}}</span>
                 </a>
         </div>
-        <a routerLink="add_to_market" class="btn-primary">Sell items</a>
+        <a routerLink="add_to_market" class="btn-primary">{{'SELL_ITEMS' | translate}}</a>
     </div>
 </header>

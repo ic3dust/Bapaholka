@@ -1,5 +1,6 @@
 :root{
     --primary: #D9D6C7;
+    --anti-primary: #99978C;
     --secondary: #C3C0B3;
     --yellow: #fed722;
     --bone: #fef8db;
@@ -8,11 +9,17 @@
     --black: #191510;
     --black-cyan: #1B3B35;
     --darker:#4F4233;
+    --aliceblue-dark:#A8AEB2;
 
     --font-h: 38px;
+    --smaller: 18px;
     --normal: 20px;
+    --icon-size: 30px;
     --large: 32px;
     --small: 16px;
+
+    --base-b: 500;
+    --bolder-b:600;
 
     --base-gap: 12px;
 }

@@ -3,16 +3,20 @@
 }
 
 .header span.material-symbols-outlined {
-  font-variation-settings: 'FILL' 1;
-  font-size: 30px;
+  display: flex;
+  line-height: 1;
+  flex-shrink: 0;
 
-  background: linear-gradient(0deg, var(--yellow), var(--orange));
+  font-variation-settings: 'FILL' 1;
+  font-size: var(--icon-size);
+
+  background: aliceblue;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .header a:hover span.material-symbols-outlined, span:hover span.material-symbols-outlined {
-  background: linear-gradient(0deg, var(--orange), var(--orange));
+  background: var(--orange);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -22,7 +26,7 @@
 
 body.ua .header a{
   font-size: var(--normal-ua);
-  font-weight: 600;
+  font-weight: var(--bolder-b);
   text-align: center;
   white-space: nowrap;
 } 
@@ -31,7 +35,7 @@ body.ua .header a:hover{
 }
 body.ua .langmark{
   font-size: var(--normal-ua);
-  font-weight: 600 !important;
+  font-weight: var(--bolder-b);
   text-align: center;
   white-space: nowrap;
 }
@@ -42,7 +46,7 @@ body.ua .langmark:hover{
 
 
 .header{
-    background-color: var(--primary);
+    background-color: var(--anti-primary);
     display:flex;
 
     position: sticky;
@@ -74,12 +78,17 @@ body.ua .langmark:hover{
 } 
 .langmark{
   padding: 0 var(--base-gap); 
-  font-size: 18px;
-  font-weight: 500; 
+  font-size: var(--smaller);
+  font-weight: var(--bolder-b); 
   transition: all 0.3s ease;
   color: var(--black-cyan)
 }
-
+.dropdown-menu{
+  background-color: var(--secondary);
+}
+.dropdown-menu li:hover{
+  background-color: var(--primary);
+}
 .langmark:hover{
   color: var(--black);
 }
@@ -90,7 +99,7 @@ body.ua .langmark:hover{
   min-height: var(--font-h);
   color:var(--black-cyan);
   font-size: var(--normal);
-  font-weight: 600;
+  font-weight: var(--bolder-b);
   padding: 0 calc(2*var(--base-gap));
 
   transition: all 0.3s ease;

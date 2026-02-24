@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -7,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './search.css',
   standalone: true,
   encapsulation: ViewEncapsulation.None,
-  imports:[TranslateModule]
+  imports:[RouterModule,TranslateModule]
 })
 export class Search {
 

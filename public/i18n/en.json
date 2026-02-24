@@ -2,5 +2,8 @@
     "CHAT": "Chats",
     "PROFILE": "Your profile",
     "SELL_ITEMS":"Sell items",
-    "SETTINGS": "Settings"
+    "SETTINGS": "Settings",
+    "SEARCH": "Search",
+    "FILTER": "Filter",
+    "CART": "Your cart"
 }

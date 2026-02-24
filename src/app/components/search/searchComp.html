@@ -1,3 +1,15 @@
 <div class="container">
-
+    <div class="home-input">
+        <span class="material-symbols-outlined">search</span>
+        <input [placeholder]="'SEARCH' | translate">
+    </div>
+    <div class="filter">
+        <a routerLink="/filter"><span>{{'FILTER'|translate}}</span></a>
+        <span class="material-symbols-outlined">search_insights</span>
+    </div>
+    <div class="basket">
+        <a routerLink="/basket">
+        <span class="material-symbols-outlined" [title]="'CART'|translate">local_mall</span>
+        </a>
+    </div>
 </div>

@@ -22,6 +22,10 @@
     --bolder-b:600;
 
     --base-gap: 12px;
+
+
+    --search-container-w:100%;
+    --search-container-h: 160px;
 }
 [theme="dark"]{
     --primary:var(--darker);

@@ -1,11 +1,13 @@
 <div class="container">
+    <ng-content select="[slot-left]"></ng-content><!--To insert subcomponents to that component-->
     <div class="home-input">
         <span class="material-symbols-outlined">search</span>
         <input [placeholder]="'SEARCH' | translate">
     </div>
+    <ng-content select="[slot-right]"></ng-content>
     <div class="filter">
         <a routerLink="/filter"><span>{{'FILTER'|translate}}</span></a>
-        <span class="material-symbols-outlined">search_insights</span>
+        <span class="material-symbols-outlined" routerLink="/filter">search_insights</span>
     </div>
     <div class="basket">
         <a routerLink="/basket">

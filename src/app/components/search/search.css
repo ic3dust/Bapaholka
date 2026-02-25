@@ -1,13 +1,8 @@
-:root{
-    --container-h: 160px;
-    --container-w: 100%;
-}
-
 .container{
     display:flex;
-    width:var(--container-w);
+    width:var(--search-container-w);
     border: none;
-    height:var(--container-h);
+    height:var(--search-container-h);
     background-color: var(--primary);
     gap:2px;
     padding: 0 100px;
@@ -16,9 +11,9 @@
     display:flex;
     align-items: center;
     text-align: left;
-    height: calc(var(--container-h)/2);
-    width: calc(var(--container-w)/1.5);
-    margin:calc(var(--container-h)/4) 0;
+    height: calc(var(--search-container-h)/2);
+    width: calc(var(--search-container-w)/1.5);
+    margin:calc(var(--search-container-h)/4) 0;
     padding: 0 20px;
     gap:5px;
     border-radius: 5px;
@@ -62,9 +57,9 @@
     justify-content: center;
     text-align: center;
     color: var(--cyan-black);
-    height: calc(var(--container-h)/2);
-    width: calc(var(--container-w)/10);
-    margin:calc(var(--container-h)/4) 0;
+    height: calc(var(--search-container-h)/2);
+    width: calc(var(--search-container-w)/10);
+    margin:calc(var(--search-container-h)/4) 0;
     background-color: aliceblue;
     gap: 10px;
     border-radius: 5px;
@@ -107,9 +102,9 @@
     justify-content: center;
     text-align: center;
     color: var(--cyan-black);
-    height: calc(var(--container-h)/2);
-    width: calc(var(--container-w)/20);
-    margin:calc(var(--container-h)/4) 0;
+    height: calc(var(--search-container-h)/2);
+    width: calc(var(--search-container-w)/20);
+    margin:calc(var(--search-container-h)/4) 0;
     background-color: aliceblue;
     gap: 10px;
     border-radius: 5px;

@@ -1,0 +1,10 @@
+<app-header></app-header>
+<app-search>
+    <a slot-left routerLink="/" class="back" (click)="$event.stopPropagation()"><span class="material-symbols-outlined">arrow_back</span></a>
+    <div slot-right class="region">
+        <input [placeholder]="'REGION' | translate">
+        <span class="material-symbols-outlined">search_insights</span>
+    </div>
+</app-search>
+
+

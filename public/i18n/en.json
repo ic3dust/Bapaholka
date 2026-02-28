@@ -6,5 +6,8 @@
     "SEARCH": "Search",
     "FILTER": "Filter",
     "CART": "Your cart",
-    "REGION": "All regions..."
+    "REGION": "All regions...",
+    "CARDS_TITLE": "What are you looking for?",
+    "LIKE":"Like",
+    "DISLIKE":"Don't like"
 }

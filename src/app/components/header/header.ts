@@ -11,11 +11,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   imports:[RouterModule,TranslateModule]
 })
 export class Header {
-
-  constructor(private translate: TranslateService){
-    translate.use('en');
-  }
-  
+  constructor(private translate: TranslateService){}
   currentLang = "English";
   
   setLang(lang: string){

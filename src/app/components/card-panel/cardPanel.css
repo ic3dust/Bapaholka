@@ -1,0 +1,89 @@
+.card-panel{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    height: auto;/*let it grow with its content*/
+    background: linear-gradient(0deg, var(--bone), var(--secondary));
+    box-shadow: var(--shadow-secondary);
+}
+.card-panel h1{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin-top: 50px;
+    font-size: var(--large);
+    background: aliceblue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+}
+.mid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+    margin-top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /*height: 167px;/*card-panel width(500) / 3 ~ 167(501/3)*/
+    height: 800px;
+}
+.mid .material-symbols-outlined{
+  font-variation-settings: 'FILL' 1;
+  font-size: calc(var(--icon-size)*2.5);
+
+  background: var(--black-cyan);
+  opacity: 0.33;
+  cursor: default;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  transition: all 0.3s ease;
+  transform: scale(1) rotate(0deg);
+}
+.mid span .material-symbols-outlined:hover{
+  background: var(--black);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mid span:first-child .material-symbols-outlined:hover {
+    transform: scale(1.1) rotate(-10deg);
+}
+
+.mid span:last-child .material-symbols-outlined:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+
+
+.cards-stack {
+    position: relative;
+    align-self: flex-start;
+    margin: 50px auto;
+    aspect-ratio: 2/3;
+    perspective: 1000px;
+    perspective-origin: center 50%;
+    transform-style: preserve-3d;
+    height: clamp(400px, 20vw, 450px);
+    width: clamp(250px, 17vw, 300px);
+}
+.card{
+    position: absolute;/*to follow the placing rules inside stack container*/
+    top:0;
+    left:0;
+    background: var(--gradient-soft-blue);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    height: clamp(400px, 20vw, 450px);
+    width: clamp(250px, 17vw, 300px);
+    transform-origin: bottom center;
+    transform: rotate(calc(var(--i) * 8deg))
+               translateX(calc(var(--i) * 100px))
+               translateY(calc(var(--offset) * 10px))
+               scale(var(--s));
+           /*--i = index for each card*/
+}

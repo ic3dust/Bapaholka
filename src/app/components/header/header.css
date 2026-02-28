@@ -60,6 +60,7 @@ body.ua .langmark:hover{
     height: 100px;
     padding: 0 100px;
     box-sizing: border-box;
+    box-shadow: var(--shadow);
 }
 .header.hidden{
   transform: translateY(-100%);

@@ -10,12 +10,21 @@
     --black-cyan: #1B3B35;
     --darker:#4F4233;
     --aliceblue-dark:#A8AEB2;
+    /*--soft-blue: #C7C9ED;*/
+    /*--aliceblue-blue: #C8CCED;*/
+
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --shadow-white: 0 4px 20px rgba(254, 248, 219, 0.5);
+    --shadow-secondary: 0 4px 20px rgb(195, 192, 179);
+
+    --gradient-soft-blue: linear-gradient(0deg, #C8CCED, aliceblue);
+    /*--gradient-softer-blue: linear-gradient(0deg, #C7C9ED 30%, aliceblue 50%);*/
 
     --font-h: 38px;
     --smaller: 18px;
     --normal: 20px;
     --icon-size: 30px;
-    --large: 32px;
+    --large: 48px;
     --small: 16px;
 
     --base-b: 500;

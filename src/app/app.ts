@@ -1,9 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, TranslateModule],
   template: `
     <router-outlet></router-outlet>
   `,
@@ -11,4 +13,7 @@ import { Router, RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('web');
+    constructor(private translate: TranslateService) {
+    translate.use('en');
+  }
 }

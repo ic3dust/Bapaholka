@@ -17,7 +17,7 @@ body.ua {
 
 .btn-primary{
   display: inline-flex;
-  background-color:aliceblue;
+  background:var(--gradient-soft-blue);
   color: var(--black-cyan);
   text-align: center;
   align-items: center;

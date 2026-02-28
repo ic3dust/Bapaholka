@@ -56,6 +56,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    height: auto;
     color: var(--cyan-black);
     height: calc(var(--search-container-h)/2);
     width: calc(var(--search-container-w)/10);
@@ -76,14 +78,14 @@
 
 .filter a,
 .filter .material-symbols-outlined {
-    display: flex;
   line-height: 1;
   flex-shrink: 0;
   text-decoration: none;
 
   transition: all 0.3s ease;
   display: inline-block;
-  font-size: var(--smaller);
+  
+  font-size: clamp(14px, 0.8vw, var(--smaller));
   font-weight: var(--base-b); 
 }
 .filter .material-symbols-outlined{

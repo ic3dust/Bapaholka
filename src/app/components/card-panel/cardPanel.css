@@ -21,6 +21,7 @@
 }
 .mid{
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -28,12 +29,15 @@
     margin-top: 0;
     width: 100%;
     box-sizing: border-box;
+    z-index: 0;
     /*height: 167px;/*card-panel width(500) / 3 ~ 167(501/3)*/
     height: 800px;
 }
 .mid .material-symbols-outlined{
   font-variation-settings: 'FILL' 1;
   font-size: calc(var(--icon-size)*2.5);
+  position: relative;
+  z-index: 999;
 
   background: var(--black-cyan);
   opacity: 0.33;
@@ -86,4 +90,28 @@
                translateY(calc(var(--offset) * 10px))
                scale(var(--s));
            /*--i = index for each card*/
+}
+
+/*Swipe animations*/
+.card.swipe-like {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateX(500px) rotate(15deg) scale(0.8) !important;
+  opacity: 0 !important;
+}
+
+.card.swipe-dislike {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  transform: translateX(-500px) rotate(-15deg) scale(0.8) !important;
+  opacity: 0 !important;
+}
+.card.dragging {
+  transition: none; /* remove transition while dragging */
+  cursor: grabbing;
+}
+.card:not(.dragging) {
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.card {
+  cursor: grab;
 }

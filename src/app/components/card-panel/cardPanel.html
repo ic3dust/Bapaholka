@@ -1,14 +1,30 @@
 <div class="card-panel">
     <h1>{{'CARDS_TITLE'|translate}}</h1>
     <div class="mid">
-        <span [title]="'LIKE'|translate"><span class="material-symbols-outlined">sentiment_satisfied</span></span>
-        <div class="cards-stack">
-            <div class="card" style="--i: -2; --offset: 2; --s: 0.9; opacity:0.75;z-index: 1"></div>
-            <div class="card" style="--i: -1; --offset: 1; --s: 0.95; opacity:0.9;z-index: 2"></div>
-            <div class="card" style="--i: 0;  --offset: 0; --s: 1;    opacity:1;z-index: 5"></div>
-            <div class="card" style="--i: 1;  --offset: 1; --s: 0.95; opacity:0.9;z-index: 2"></div>
-            <div class="card" style="--i: 2;  --offset: 2; --s: 0.9; opacity:0.75;z-index: 1"></div>
+        <span [title]="'DISLIKE'|translate"><span class="material-symbols-outlined">sentiment_dissatisfied</span></span>
+        <div class="cards-stack"
+            (mousemove)="onMouseMove($event)"
+            (mouseleave)="onDragCancel()"
+        >
+            <div class="card"
+                *ngFor="let card of cards; let i = index"
+
+                [attr.data-id]="card.id"
+
+                [style.--i]="getPos(i)"
+                [style.--offset]="Math.abs(getPos(i))"
+                [style.--s]="1 - Math.abs(getPos(i)) * 0.05"
+                [style.opacity]="1 - Math.abs(getPos(i)) * 0.125"
+                [style.z-index]="getPos(i) === 0 ? 5 : 5 - Math.abs(getPos(i))"
+                [style.transform]="getPos(i) === 0 && !swipeState
+                ? 'translateX(' + dragOffsetX + 'px) translateY(' + dragOffsetY + 'px)' 
+                : null"
+                [class.dragging]="isDragging && getPos(i) === 0"
+                (click)="onCardClick($event, i)"
+                [class.swipe-like]="swipeState === 'like' && getPos(i) === 0"
+                [class.swipe-dislike]="swipeState === 'dislike' && getPos(i) === 0">
+            </div><!--use getPos(0[center]) with swap-like and dislike to re-assign thsose classes to the new center card-->
         </div>
-        <span [title]="'LIKE'|translate"><span class="material-symbols-outlined" [title]="'DISLIKE'|translate">sentiment_dissatisfied</span></span>
+        <span [title]="'LIKE'|translate"><span class="material-symbols-outlined">sentiment_satisfied</span></span>
     </div>
 </div>

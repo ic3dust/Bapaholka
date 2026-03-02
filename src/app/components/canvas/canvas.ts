@@ -29,7 +29,7 @@ export class Canvas {
       const [a,o, u, i, e, a1, o1, u1, e1,i1]=Array.from({length: 10},()=>gen(5));
       console.log(a);
 
-      const is =[i,e1,a,a1,o,o1,i1,u1,e,u];
+      const is =[i,a1,o,a,u,i1,o,u1,i1,e1,e,u,o1];
       
       const spacing = 32;
       canvas.width = is.length * spacing + 30; // dynamic width

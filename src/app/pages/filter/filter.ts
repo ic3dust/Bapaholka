@@ -3,14 +3,16 @@ import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { Header } from '../../components/header/header';
 import { Search } from '../../components/search/search';
+import { Chapters } from '../../components/chapters/chapters';
+import { Copyright } from '../../components/copyright/copyright';
 
 @Component({
   selector: 'app-filter',
-  templateUrl:'./filterCOmp.html',
-  styleUrls:['./filter.css', '../../components/search/search.css'],
+  templateUrl:'./filterComp.html',
+  styleUrls:['./filter.css', '../../components/search/search.css', '../../components/chapters/chapters.css','../../components/copyright/copyright.css'],
   standalone:true,
   encapsulation:ViewEncapsulation.None,
-  imports: [Header, Search, TranslateModule, RouterModule]
+  imports: [Header, Search, Chapters, Copyright,TranslateModule, RouterModule]
 })
 export class Filter {
 

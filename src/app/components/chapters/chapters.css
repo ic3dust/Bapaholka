@@ -1,0 +1,13 @@
+.chapters-cont{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width:100%;
+    height: auto;
+    background: linear-gradient(0deg, var(--bone), var(--secondary));
+    box-shadow: var(--shadow-secondary);
+}
+.chapters{
+    display:grid;
+}

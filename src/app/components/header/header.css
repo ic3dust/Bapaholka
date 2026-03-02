@@ -66,8 +66,8 @@ body.ua .langmark:hover{
   transform: translateY(-100%);
 }
 .header img{
-  height:165px;;
-  margin-top: 10px;
+  height:150px;;
+  margin-top: 0;
   width:auto;
   object-fit: contain;
 }  

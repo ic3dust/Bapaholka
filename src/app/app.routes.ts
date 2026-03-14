@@ -5,4 +5,5 @@ import { Home } from './pages/home/home';
 export const routes: Routes = [
   { path: '', component: Home },
   { path: 'filter', component: Filter },
+  //{ path: 'filter/:param', component: Filter },
 ];

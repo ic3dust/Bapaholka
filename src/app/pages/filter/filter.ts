@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { Header } from '../../components/header/header';
 import { Search } from '../../components/search/search';
@@ -15,5 +15,14 @@ import { Copyright } from '../../components/copyright/copyright';
   imports: [Header, Search, Chapters, Copyright,TranslateModule, RouterModule]
 })
 export class Filter {
+/*
+  param: string = '';
+  constructor(private route: ActivatedRoute){}
 
+  ngOnInit(){
+    this.route.params.subscribe(params=>{
+     this.param = params['param'];
+      //this.loadItems();
+    })
+  }*/
 }

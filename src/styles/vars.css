@@ -6,6 +6,7 @@
     --bone: #fef8db;
     --orange: #f75700;
     --cyan: #24e2cb;
+    --darker-cyan: #0D685D;
     --black: #191510;
     --black-cyan: #1B3B35;
     --darker:#4F4233;
@@ -19,6 +20,12 @@
 
     --gradient-soft-blue: linear-gradient(0deg, #C8CCED, aliceblue);
     /*--gradient-softer-blue: linear-gradient(0deg, #C7C9ED 30%, aliceblue 50%);*/
+
+    /* GLOW */
+    /*background: aliceblue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));*/
 
     --font-h: 38px;
     --smaller: 18px;

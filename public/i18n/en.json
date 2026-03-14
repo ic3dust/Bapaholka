@@ -9,5 +9,17 @@
     "REGION": "All regions...",
     "CARDS_TITLE": "What are you looking for?",
     "LIKE":"Like",
-    "DISLIKE":"Don't like"
+    "DISLIKE":"Don't like",
+    "CHAPTERS": "Chapters for you",
+    "MEN":"Men's clothing",
+    "LADY":"Ladies' clothing",
+    "LIT":"Books (literature)",
+    "SCI":"Books (science)",
+    "OB":"Books (other)",
+    "F":"Furniture",
+    "EL":"Electronics",
+    "ACCS":"Accounts & on-line",
+    "MT":"Mechanic tools",
+    "OT":"Other tools",
+    "AUTOS":"Automobiles"
 }
